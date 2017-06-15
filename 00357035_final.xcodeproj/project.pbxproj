@@ -7,14 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C2CC7F81EDE628000D6CDCA /* LikeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2CC7F71EDE628000D6CDCA /* LikeTableCell.swift */; };
+		0C7A37281EE7BC7C007FD262 /* NewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7A37271EE7BC7C007FD262 /* NewTableViewController.swift */; };
+		4C1B9E4F1EDD663A0046A2A2 /* cardTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1B9E4E1EDD663A0046A2A2 /* cardTabBarController.swift */; };
+		4C1B9E511EDD67740046A2A2 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1B9E501EDD67740046A2A2 /* CardViewController.swift */; };
+		4C1B9E531EDD67880046A2A2 /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1B9E521EDD67880046A2A2 /* CardDetailViewController.swift */; };
+		4C33C97D1ED9B8020075085A /* cardOfIdolTableViewController.temp_caseinsensitive_rename.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C33C97C1ED9B8020075085A /* cardOfIdolTableViewController.temp_caseinsensitive_rename.swift */; };
+		4C33C97F1ED9C1A90075085A /* mainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3EBD81ED52DFC0036DDD2 /* mainViewController.swift */; };
+		4C33C9811ED9C9020075085A /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C33C9801ED9C9020075085A /* CardTableViewCell.swift */; };
+		4C58026B1EED84880036F9D2 /* likeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C58026A1EED84880036F9D2 /* likeTabBarController.swift */; };
+		4C58026D1EED854C0036F9D2 /* likeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C58026C1EED854C0036F9D2 /* likeDetailViewController.swift */; };
+		4C5802711EED89DF0036F9D2 /* likeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5802701EED89DF0036F9D2 /* likeTableViewController.swift */; };
+		8C67AE271EF0FB7E00C1A71F /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C67AE261EF0FB7E00C1A71F /* EditViewController.swift */; };
 		8DC3EBC71ED52B130036DDD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3EBC61ED52B130036DDD2 /* AppDelegate.swift */; };
 		8DC3EBC91ED52B130036DDD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3EBC81ED52B130036DDD2 /* ViewController.swift */; };
 		8DC3EBCC1ED52B130036DDD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DC3EBCA1ED52B130036DDD2 /* Main.storyboard */; };
 		8DC3EBCE1ED52B130036DDD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DC3EBCD1ED52B130036DDD2 /* Assets.xcassets */; };
 		8DC3EBD11ED52B130036DDD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DC3EBCF1ED52B130036DDD2 /* LaunchScreen.storyboard */; };
+		8DC3EBDB1ED533820036DDD2 /* likeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3EBDA1ED533820036DDD2 /* likeViewController.swift */; };
+		8DC3EBDF1ED54B870036DDD2 /* IdolTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3EBDE1ED54B870036DDD2 /* IdolTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C2CC7F71EDE628000D6CDCA /* LikeTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeTableCell.swift; sourceTree = "<group>"; };
+		0C7A37271EE7BC7C007FD262 /* NewTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTableViewController.swift; sourceTree = "<group>"; };
+		4C1B9E4E1EDD663A0046A2A2 /* cardTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cardTabBarController.swift; sourceTree = "<group>"; };
+		4C1B9E501EDD67740046A2A2 /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		4C1B9E521EDD67880046A2A2 /* CardDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
+		4C33C97C1ED9B8020075085A /* cardOfIdolTableViewController.temp_caseinsensitive_rename.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cardOfIdolTableViewController.temp_caseinsensitive_rename.swift; sourceTree = "<group>"; };
+		4C33C9801ED9C9020075085A /* CardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		4C58026A1EED84880036F9D2 /* likeTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = likeTabBarController.swift; sourceTree = "<group>"; };
+		4C58026C1EED854C0036F9D2 /* likeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = likeDetailViewController.swift; sourceTree = "<group>"; };
+		4C5802701EED89DF0036F9D2 /* likeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = likeTableViewController.swift; sourceTree = "<group>"; };
+		8C67AE261EF0FB7E00C1A71F /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		8DC3EBC31ED52B130036DDD2 /* 00357035_final.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 00357035_final.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC3EBC61ED52B130036DDD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DC3EBC81ED52B130036DDD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +47,9 @@
 		8DC3EBCD1ED52B130036DDD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DC3EBD01ED52B130036DDD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DC3EBD21ED52B130036DDD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DC3EBD81ED52DFC0036DDD2 /* mainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
+		8DC3EBDA1ED533820036DDD2 /* likeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = likeViewController.swift; sourceTree = "<group>"; };
+		8DC3EBDE1ED54B870036DDD2 /* IdolTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdolTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +63,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C58026E1EED89180036F9D2 /* 1 */ = {
+			isa = PBXGroup;
+			children = (
+				8DC3EBD81ED52DFC0036DDD2 /* mainViewController.swift */,
+				8DC3EBDE1ED54B870036DDD2 /* IdolTableCell.swift */,
+				4C33C97C1ED9B8020075085A /* cardOfIdolTableViewController.temp_caseinsensitive_rename.swift */,
+				4C33C9801ED9C9020075085A /* CardTableViewCell.swift */,
+				4C1B9E4E1EDD663A0046A2A2 /* cardTabBarController.swift */,
+				4C1B9E521EDD67880046A2A2 /* CardDetailViewController.swift */,
+				4C1B9E501EDD67740046A2A2 /* CardViewController.swift */,
+			);
+			name = 1;
+			sourceTree = "<group>";
+		};
+		4C58026F1EED89890036F9D2 /* 2 */ = {
+			isa = PBXGroup;
+			children = (
+				4C5802701EED89DF0036F9D2 /* likeTableViewController.swift */,
+				0C2CC7F71EDE628000D6CDCA /* LikeTableCell.swift */,
+				4C58026A1EED84880036F9D2 /* likeTabBarController.swift */,
+				4C58026C1EED854C0036F9D2 /* likeDetailViewController.swift */,
+				8C67AE261EF0FB7E00C1A71F /* EditViewController.swift */,
+				8DC3EBDA1ED533820036DDD2 /* likeViewController.swift */,
+			);
+			name = 2;
+			sourceTree = "<group>";
+		};
 		8DC3EBBA1ED52B130036DDD2 = {
 			isa = PBXGroup;
 			children = (
@@ -56,7 +111,10 @@
 			children = (
 				8DC3EBC61ED52B130036DDD2 /* AppDelegate.swift */,
 				8DC3EBC81ED52B130036DDD2 /* ViewController.swift */,
+				4C58026E1EED89180036F9D2 /* 1 */,
+				4C58026F1EED89890036F9D2 /* 2 */,
 				8DC3EBCA1ED52B130036DDD2 /* Main.storyboard */,
+				0C7A37271EE7BC7C007FD262 /* NewTableViewController.swift */,
 				8DC3EBCD1ED52B130036DDD2 /* Assets.xcassets */,
 				8DC3EBCF1ED52B130036DDD2 /* LaunchScreen.storyboard */,
 				8DC3EBD21ED52B130036DDD2 /* Info.plist */,
@@ -136,8 +194,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DC3EBDB1ED533820036DDD2 /* likeViewController.swift in Sources */,
+				4C33C97D1ED9B8020075085A /* cardOfIdolTableViewController.temp_caseinsensitive_rename.swift in Sources */,
+				4C5802711EED89DF0036F9D2 /* likeTableViewController.swift in Sources */,
 				8DC3EBC91ED52B130036DDD2 /* ViewController.swift in Sources */,
+				8DC3EBDF1ED54B870036DDD2 /* IdolTableCell.swift in Sources */,
+				4C58026D1EED854C0036F9D2 /* likeDetailViewController.swift in Sources */,
 				8DC3EBC71ED52B130036DDD2 /* AppDelegate.swift in Sources */,
+				4C1B9E531EDD67880046A2A2 /* CardDetailViewController.swift in Sources */,
+				8C67AE271EF0FB7E00C1A71F /* EditViewController.swift in Sources */,
+				0C2CC7F81EDE628000D6CDCA /* LikeTableCell.swift in Sources */,
+				0C7A37281EE7BC7C007FD262 /* NewTableViewController.swift in Sources */,
+				4C1B9E511EDD67740046A2A2 /* CardViewController.swift in Sources */,
+				4C58026B1EED84880036F9D2 /* likeTabBarController.swift in Sources */,
+				4C33C97F1ED9C1A90075085A /* mainViewController.swift in Sources */,
+				4C33C9811ED9C9020075085A /* CardTableViewCell.swift in Sources */,
+				4C1B9E4F1EDD663A0046A2A2 /* cardTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +333,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = 00357035_final/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "NTOU.-0357035-final";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -273,10 +347,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = 00357035_final/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "NTOU.-0357035-final";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -299,6 +375,7 @@
 				8DC3EBD71ED52B130036DDD2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
