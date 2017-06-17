@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0C2CC7F81EDE628000D6CDCA /* LikeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2CC7F71EDE628000D6CDCA /* LikeTableCell.swift */; };
-		0C7A37281EE7BC7C007FD262 /* NewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7A37271EE7BC7C007FD262 /* NewTableViewController.swift */; };
 		4C1B9E4F1EDD663A0046A2A2 /* cardTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1B9E4E1EDD663A0046A2A2 /* cardTabBarController.swift */; };
 		4C1B9E511EDD67740046A2A2 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1B9E501EDD67740046A2A2 /* CardViewController.swift */; };
 		4C1B9E531EDD67880046A2A2 /* CardDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C1B9E521EDD67880046A2A2 /* CardDetailViewController.swift */; };
@@ -18,6 +17,10 @@
 		4C58026B1EED84880036F9D2 /* likeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C58026A1EED84880036F9D2 /* likeTabBarController.swift */; };
 		4C58026D1EED854C0036F9D2 /* likeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C58026C1EED854C0036F9D2 /* likeDetailViewController.swift */; };
 		4C5802711EED89DF0036F9D2 /* likeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5802701EED89DF0036F9D2 /* likeTableViewController.swift */; };
+		4CCB81431EF524100027B1F6 /* ScoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCB81421EF524100027B1F6 /* ScoreTableViewController.swift */; };
+		4CCB81461EF527AF0027B1F6 /* ScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCB81451EF527AF0027B1F6 /* ScoreTableViewCell.swift */; };
+		4CCB81481EF52A120027B1F6 /* AddPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCB81471EF52A120027B1F6 /* AddPhotoViewController.swift */; };
+		4CCB814A1EF55DB30027B1F6 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCB81491EF55DB30027B1F6 /* PhotoViewController.swift */; };
 		8C67AE271EF0FB7E00C1A71F /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C67AE261EF0FB7E00C1A71F /* EditViewController.swift */; };
 		8DC3EBC71ED52B130036DDD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3EBC61ED52B130036DDD2 /* AppDelegate.swift */; };
 		8DC3EBC91ED52B130036DDD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3EBC81ED52B130036DDD2 /* ViewController.swift */; };
@@ -30,7 +33,6 @@
 
 /* Begin PBXFileReference section */
 		0C2CC7F71EDE628000D6CDCA /* LikeTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeTableCell.swift; sourceTree = "<group>"; };
-		0C7A37271EE7BC7C007FD262 /* NewTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewTableViewController.swift; sourceTree = "<group>"; };
 		4C1B9E4E1EDD663A0046A2A2 /* cardTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = cardTabBarController.swift; sourceTree = "<group>"; };
 		4C1B9E501EDD67740046A2A2 /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		4C1B9E521EDD67880046A2A2 /* CardDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardDetailViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +41,10 @@
 		4C58026A1EED84880036F9D2 /* likeTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = likeTabBarController.swift; sourceTree = "<group>"; };
 		4C58026C1EED854C0036F9D2 /* likeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = likeDetailViewController.swift; sourceTree = "<group>"; };
 		4C5802701EED89DF0036F9D2 /* likeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = likeTableViewController.swift; sourceTree = "<group>"; };
+		4CCB81421EF524100027B1F6 /* ScoreTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreTableViewController.swift; sourceTree = "<group>"; };
+		4CCB81451EF527AF0027B1F6 /* ScoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreTableViewCell.swift; sourceTree = "<group>"; };
+		4CCB81471EF52A120027B1F6 /* AddPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPhotoViewController.swift; sourceTree = "<group>"; };
+		4CCB81491EF55DB30027B1F6 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		8C67AE261EF0FB7E00C1A71F /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		8DC3EBC31ED52B130036DDD2 /* 00357035_final.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 00357035_final.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC3EBC61ED52B130036DDD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +96,17 @@
 			name = 2;
 			sourceTree = "<group>";
 		};
+		4CCB81441EF524310027B1F6 /* 3 */ = {
+			isa = PBXGroup;
+			children = (
+				4CCB81421EF524100027B1F6 /* ScoreTableViewController.swift */,
+				4CCB81451EF527AF0027B1F6 /* ScoreTableViewCell.swift */,
+				4CCB81471EF52A120027B1F6 /* AddPhotoViewController.swift */,
+				4CCB81491EF55DB30027B1F6 /* PhotoViewController.swift */,
+			);
+			name = 3;
+			sourceTree = "<group>";
+		};
 		8DC3EBBA1ED52B130036DDD2 = {
 			isa = PBXGroup;
 			children = (
@@ -113,8 +130,8 @@
 				8DC3EBC81ED52B130036DDD2 /* ViewController.swift */,
 				4C58026E1EED89180036F9D2 /* 1 */,
 				4C58026F1EED89890036F9D2 /* 2 */,
+				4CCB81441EF524310027B1F6 /* 3 */,
 				8DC3EBCA1ED52B130036DDD2 /* Main.storyboard */,
-				0C7A37271EE7BC7C007FD262 /* NewTableViewController.swift */,
 				8DC3EBCD1ED52B130036DDD2 /* Assets.xcassets */,
 				8DC3EBCF1ED52B130036DDD2 /* LaunchScreen.storyboard */,
 				8DC3EBD21ED52B130036DDD2 /* Info.plist */,
@@ -200,15 +217,18 @@
 				8DC3EBC91ED52B130036DDD2 /* ViewController.swift in Sources */,
 				8DC3EBDF1ED54B870036DDD2 /* IdolTableCell.swift in Sources */,
 				4C58026D1EED854C0036F9D2 /* likeDetailViewController.swift in Sources */,
+				4CCB81461EF527AF0027B1F6 /* ScoreTableViewCell.swift in Sources */,
+				4CCB81481EF52A120027B1F6 /* AddPhotoViewController.swift in Sources */,
 				8DC3EBC71ED52B130036DDD2 /* AppDelegate.swift in Sources */,
 				4C1B9E531EDD67880046A2A2 /* CardDetailViewController.swift in Sources */,
 				8C67AE271EF0FB7E00C1A71F /* EditViewController.swift in Sources */,
 				0C2CC7F81EDE628000D6CDCA /* LikeTableCell.swift in Sources */,
-				0C7A37281EE7BC7C007FD262 /* NewTableViewController.swift in Sources */,
 				4C1B9E511EDD67740046A2A2 /* CardViewController.swift in Sources */,
 				4C58026B1EED84880036F9D2 /* likeTabBarController.swift in Sources */,
+				4CCB81431EF524100027B1F6 /* ScoreTableViewController.swift in Sources */,
 				4C33C97F1ED9C1A90075085A /* mainViewController.swift in Sources */,
 				4C33C9811ED9C9020075085A /* CardTableViewCell.swift in Sources */,
+				4CCB814A1EF55DB30027B1F6 /* PhotoViewController.swift in Sources */,
 				4C1B9E4F1EDD663A0046A2A2 /* cardTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

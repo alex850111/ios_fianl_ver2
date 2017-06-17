@@ -33,6 +33,9 @@ class EditViewController: UITableViewController {
         nickNameField.text = nickName
         icon.image = UIImage(named: realName + "+(ICON).png")
         idolCell.backgroundColor = propertyColor
+        
+        nickNameField.keyboardType = .default
+        
         // Do any additional setup after loading the view.
     }
 
