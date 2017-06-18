@@ -10,10 +10,10 @@ import UIKit
 
 class likeDetailViewController: UIViewController {
     @IBOutlet weak var textArea: UITextView!
-    @IBOutlet weak var nickNameEdit: UIButton!
+    @IBOutlet weak var nickNameEdit: UIBarButtonItem!
     @IBOutlet weak var propertyMark: UIImageView!
     @IBOutlet weak var petitView: UIImageView!
-    @IBOutlet weak var b: UIButton!
+    
 
     var realName = ""
     var nickName = ""
@@ -25,6 +25,9 @@ class likeDetailViewController: UIViewController {
         super.viewDidLoad()
         
         tabParent = self.tabBarController as! likeTabBarController
+        
+        tabParent.navigationItem.rightBarButtonItem = nickNameEdit
+        tabParent.navigationItem.backBarButtonItem?.title = "back"
         
         realName = tabParent.realName
         nickName = tabParent.nickName

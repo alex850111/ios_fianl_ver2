@@ -27,7 +27,7 @@ class EditViewController: UITableViewController {
         
         done.target = self
         done.action = #selector(saveChanged)
-        
+        self.navigationItem.backBarButtonItem?.title = "Cancel"
         
         cardNameField.text = realName
         nickNameField.text = nickName

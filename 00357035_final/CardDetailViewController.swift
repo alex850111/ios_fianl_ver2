@@ -13,7 +13,7 @@ class CardDetailViewController: UIViewController {
     @IBOutlet weak var petitView: UIImageView!
     @IBOutlet weak var propertyMark: UIImageView!
     @IBOutlet var viewPanel: UIView!
-    @IBOutlet weak var b: UIButton!
+    @IBOutlet weak var addFavorite: UIBarButtonItem!
     
     let nickName = "nickName", realName = "realName", type = "type"
     
@@ -24,9 +24,13 @@ class CardDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        b.addTarget(self, action: #selector(modifyLikeList), for: .touchUpInside)
+        //navigationItem.rightBarButtonItem = addFavorite
+        
+        addFavorite.target = self
+        addFavorite.action = #selector(modifyLikeList)
         
         let parent = self.tabBarController as! cardTabBarController
+        parent.navigationItem.rightBarButtonItem = addFavorite
         propertyMark.image = UIImage(named : "mark_" + parent.property)
         viewPanel.backgroundColor = parent.propertyColor
         
@@ -49,7 +53,7 @@ class CardDetailViewController: UIViewController {
     }
     
     
-    func modifyLikeList(sender: UIButton!){
+    func modifyLikeList(){
         var likeDic = [[String:String]]()
         
         let fileManager = FileManager.default

@@ -1,3 +1,5 @@
+棟方愛海	cute
+木村夏樹	passion
 渋谷凛	cool
 道明寺歌鈴	cute
 村上巴	passion
@@ -17,6 +19,7 @@
 三船美優	cool
 五十嵐響子	cute
 喜多見柚	passion
+多田李衣菜	cool
 椎名法子	cute
 相葉夕美	passion
 二宮飛鳥	cool
@@ -64,9 +67,7 @@
 前川みく	cute
 神崎蘭子	cool
 橘ありす	cool
-木村夏樹	passion
 喜多日菜子	passion
 向井拓海	passion
 川島瑞樹	cool
 市原仁奈	passion
-多田李衣菜	cool

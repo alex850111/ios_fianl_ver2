@@ -124,24 +124,6 @@
             </objects>
             <point key="canvasLocation" x="1582" y="430"/>
         </scene>
-        <!--Card Tab Bar Controller-->
-        <scene sceneID="G9Y-lJ-bQj">
-            <objects>
-                <tabBarController id="EhB-s7-Xas" customClass="cardTabBarController" customModule="_0357035_final" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="AOu-em-Iy3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="qKA-UJ-uTZ" kind="relationship" relationship="viewControllers" id="1RA-Ia-mj2"/>
-                        <segue destination="QCx-L5-ERi" kind="relationship" relationship="viewControllers" id="ebm-Tl-E90"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="95F-ga-NXV" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2358" y="-245"/>
-        </scene>
         <!--お気に入り-->
         <scene sceneID="kio-ku-xkZ">
             <objects>
@@ -392,10 +374,10 @@
             </objects>
             <point key="canvasLocation" x="2358" y="1191"/>
         </scene>
-        <!--データ-->
+        <!--LikeDetailView-->
         <scene sceneID="KSl-tp-RGT">
             <objects>
-                <viewController id="tEb-C9-brp" customClass="likeDetailViewController" customModule="_0357035_final" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="LikeDetailView" id="tEb-C9-brp" customClass="likeDetailViewController" customModule="_0357035_final" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="D7l-pr-u3h"/>
                         <viewControllerLayoutGuide type="bottom" id="wHW-13-oQD"/>
@@ -419,20 +401,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3F-Q7-czX">
-                                <rect key="frame" x="251" y="64" width="108" height="106"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="愛称を編集する"/>
-                                <connections>
-                                    <segue destination="rlZ-bm-Z4s" kind="show" identifier="editSegue" id="ORO-1T-hx3"/>
-                                </connections>
-                            </button>
                         </subviews>
                     </view>
                     <tabBarItem key="tabBarItem" title="データ" id="Ywq-3H-JAF"/>
+                    <navigationItem key="navigationItem" title="Title" id="Szy-zO-xyt">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="edit" id="LBz-cI-Dit">
+                            <connections>
+                                <segue destination="rlZ-bm-Z4s" kind="show" id="rDA-WO-Qsp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="b" destination="w3F-Q7-czX" id="Mfz-oK-7IZ"/>
-                        <outlet property="nickNameEdit" destination="w3F-Q7-czX" id="5zp-ke-l49"/>
+                        <outlet property="nickNameEdit" destination="LBz-cI-Dit" id="qxO-QJ-2tI"/>
                         <outlet property="petitView" destination="qoh-99-0Gl" id="FXI-Yg-my0"/>
                         <outlet property="propertyMark" destination="MS8-iS-ttJ" id="sj1-9B-FQy"/>
                         <outlet property="textArea" destination="i23-Og-tvh" id="ivI-zB-JB8"/>
@@ -522,81 +502,105 @@
             </objects>
             <point key="canvasLocation" x="3149.5999999999999" y="429.53523238380814"/>
         </scene>
-        <!--データ-->
-        <scene sceneID="p7T-1p-uIz">
+        <!--Card Tab Bar Controller-->
+        <scene sceneID="yuW-Hz-xYB">
             <objects>
-                <viewController id="qKA-UJ-uTZ" customClass="CardDetailViewController" customModule="_0357035_final" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController id="gkP-JF-5qC" customClass="cardTabBarController" customModule="_0357035_final" customModuleProvider="target" sceneMemberID="viewController">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="iYe-7C-VCc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="hoE-yN-QTX" kind="relationship" relationship="viewControllers" id="rGx-RN-AzA"/>
+                        <segue destination="gst-qx-s8t" kind="relationship" relationship="viewControllers" id="PMl-eO-bgP"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zda-5p-72X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2358" y="-245"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="8xq-Ps-YBm">
+            <objects>
+                <viewController id="hoE-yN-QTX" customClass="CardDetailViewController" customModule="_0357035_final" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="49e-Nk-oVc"/>
-                        <viewControllerLayoutGuide type="bottom" id="A9G-Cp-DrS"/>
+                        <viewControllerLayoutGuide type="top" id="UKb-nL-eei"/>
+                        <viewControllerLayoutGuide type="bottom" id="urj-bF-fNn"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="02E-Yo-gka">
+                    <view key="view" contentMode="scaleToFill" id="wW7-BS-jez">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="petit" translatesAutoresizingMaskIntoConstraints="NO" id="pdm-cK-S7g" userLabel="petit">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mDK-bR-9Dh">
                                 <rect key="frame" x="240" y="482" width="130" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.25" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="mark" translatesAutoresizingMaskIntoConstraints="NO" id="43H-kE-gJA" userLabel="mark">
+                            <imageView userInteractionEnabled="NO" alpha="0.25" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vHP-R7-3N4">
                                 <rect key="frame" x="17" y="164" width="340" height="340"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="dataArea" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sEQ-n1-C0i" userLabel="dataArea">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JHx-vD-54l">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ual-GU-QFK">
-                                <rect key="frame" x="248" y="106" width="109" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="お気に入り"/>
-                            </button>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="データ" id="hlO-Rb-aQp"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="NCf-pw-3js"/>
+                    <navigationItem key="navigationItem" title="Title" id="r7e-Mu-4DH">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="bookmarks" id="hxr-2Y-IqG">
+                            <connections>
+                                <action selector="addFavorite:" destination="hoE-yN-QTX" id="Ej6-li-BGc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
-                        <outlet property="b" destination="ual-GU-QFK" id="q1R-oy-sQU"/>
-                        <outlet property="petitView" destination="pdm-cK-S7g" id="BFL-5m-0VI"/>
-                        <outlet property="propertyMark" destination="43H-kE-gJA" id="yoA-Jo-Hha"/>
-                        <outlet property="textView" destination="sEQ-n1-C0i" id="X6v-aG-ROf"/>
-                        <outlet property="viewPanel" destination="02E-Yo-gka" id="agg-Ul-0RP"/>
+                        <outlet property="addFavorite" destination="hxr-2Y-IqG" id="TTu-Q7-LJg"/>
+                        <outlet property="petitView" destination="mDK-bR-9Dh" id="Z5O-u9-dm4"/>
+                        <outlet property="propertyMark" destination="vHP-R7-3N4" id="3ga-n0-4FD"/>
+                        <outlet property="textView" destination="JHx-vD-54l" id="fN0-xQ-txI"/>
+                        <outlet property="viewPanel" destination="wW7-BS-jez" id="sQB-cp-0dx"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="s0f-fm-xaO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FqW-VL-MpL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3149.5999999999999" y="-918.44077961019502"/>
+            <point key="canvasLocation" x="3150" y="-949"/>
         </scene>
-        <!--立ち絵-->
-        <scene sceneID="UAf-mD-fHz">
+        <!--Item-->
+        <scene sceneID="i3b-gU-DEP">
             <objects>
-                <viewController id="QCx-L5-ERi" customClass="CardViewController" customModule="_0357035_final" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="gst-qx-s8t" customClass="CardViewController" customModule="_0357035_final" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="piS-EX-KGO"/>
-                        <viewControllerLayoutGuide type="bottom" id="FIK-Ol-L55"/>
+                        <viewControllerLayoutGuide type="top" id="bxZ-nh-O9y"/>
+                        <viewControllerLayoutGuide type="bottom" id="gS3-4O-ygY"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="U4B-5s-Ljn">
+                    <view key="view" contentMode="scaleToFill" id="KlW-NJ-c9K">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XF8-H1-8cu">
-                                <rect key="frame" x="0.0" y="169" width="375" height="458"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ORd-mt-nvr">
+                                <rect key="frame" x="0.0" y="160" width="375" height="460"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="2" title="立ち絵" id="VfE-97-ljX"/>
+                    <tabBarItem key="tabBarItem" title="Item" id="Wln-OY-TNY"/>
+                    <navigationItem key="navigationItem" id="1wF-3l-37N"/>
                     <connections>
-                        <outlet property="cardView" destination="XF8-H1-8cu" id="8RI-7U-45l"/>
-                        <outlet property="cardViewView" destination="U4B-5s-Ljn" id="mjN-Dg-qd9"/>
-                        <outlet property="view" destination="XF8-H1-8cu" id="Rn8-6E-TiY"/>
+                        <outlet property="cardView" destination="ORd-mt-nvr" id="Ypp-FQ-cZS"/>
+                        <outlet property="cardViewView" destination="KlW-NJ-c9K" id="bO5-cM-qT6"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MQS-Bx-tji" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="95B-5W-d9x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3149.5999999999999" y="-245.12743628185908"/>
+            <point key="canvasLocation" x="3150" y="-245"/>
         </scene>
         <!--Item-->
         <scene sceneID="0MG-dk-Kxh">
@@ -630,7 +634,7 @@
                                 <connections>
                                     <outlet property="cardIcon" destination="lRy-9A-tqh" id="DJy-oj-KI6"/>
                                     <outlet property="cardName" destination="9sg-uu-ZqI" id="9O6-vz-vTe"/>
-                                    <segue destination="EhB-s7-Xas" kind="show" id="wqi-oo-Uec"/>
+                                    <segue destination="gkP-JF-5qC" kind="show" id="oU3-Q0-U60"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
