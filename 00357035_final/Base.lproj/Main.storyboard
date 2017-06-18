@@ -209,7 +209,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IPY-O3-zJn">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -551,7 +551,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="NCf-pw-3js"/>
+                    <tabBarItem key="tabBarItem" title="データ" id="NCf-pw-3js"/>
                     <navigationItem key="navigationItem" title="Title" id="r7e-Mu-4DH">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="bookmarks" id="hxr-2Y-IqG">
                             <connections>
@@ -572,7 +572,7 @@
             </objects>
             <point key="canvasLocation" x="3150" y="-949"/>
         </scene>
-        <!--Item-->
+        <!--立ち絵-->
         <scene sceneID="i3b-gU-DEP">
             <objects>
                 <viewController id="gst-qx-s8t" customClass="CardViewController" customModule="_0357035_final" customModuleProvider="target" sceneMemberID="viewController">
@@ -591,7 +591,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Wln-OY-TNY"/>
+                    <tabBarItem key="tabBarItem" title="立ち絵" id="Wln-OY-TNY"/>
                     <navigationItem key="navigationItem" id="1wF-3l-37N"/>
                     <connections>
                         <outlet property="cardView" destination="ORd-mt-nvr" id="Ypp-FQ-cZS"/>

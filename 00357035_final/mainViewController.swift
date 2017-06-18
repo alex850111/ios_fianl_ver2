@@ -13,8 +13,6 @@ class mainViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //let contents
-        
         
         if let asset = NSDataAsset(name : "IdolNameList"), let contents = String(data:asset.data, encoding: String.Encoding.utf8){
             for line in contents.components(separatedBy: "\n"){
@@ -30,7 +28,7 @@ class mainViewController: UITableViewController {
                      "cool":UIColor(red: CGFloat(207.0/255.0), green: CGFloat(241.0/255.0), blue: CGFloat(255.0/255.0), alpha: CGFloat(1.0)),
                      "passion":UIColor(red: CGFloat(255.0/255.0), green: CGFloat(245.0/255.0), blue: CGFloat(202.0/255.0), alpha: CGFloat(1.0))]
         //idols = [["name":"小日向美穂", "type":"cute"],["name":"多田李衣菜", "type":"cool"],["name":"大槻唯", "type":"passion"]]
-        
+        checkIsLikeListExist()
     }
     
     override func didReceiveMemoryWarning() {
@@ -70,6 +68,24 @@ class mainViewController: UITableViewController {
         controller.idolName = dic["name"]!
         controller.cellColor = typeColor[dic["type"]!]!
         controller.property = dic["type"]!
+    }
+    
+    func checkIsLikeListExist(){
+        let fileManager = FileManager.default
+        let docUrls = fileManager.urls(for: .documentDirectory, in: .userDomainMask)
+        let docUrl = docUrls.first
+        let url = docUrl?.appendingPathComponent("likeList.txt")
+        
+        do{
+            _ = try String(contentsOf: url!, encoding: String.Encoding.utf8)
+        }
+        catch{
+            let s = ""
+            do{
+                try s.write(to: url!, atomically: false, encoding: String.Encoding.utf8)
+            }catch{
+            }
+        }
     }
     
 }
