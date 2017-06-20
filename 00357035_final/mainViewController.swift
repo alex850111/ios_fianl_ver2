@@ -27,7 +27,7 @@ class mainViewController: UITableViewController {
         typeColor = ["cute":UIColor(red: CGFloat(255.0/255.0), green: CGFloat(188.0/255.0), blue: CGFloat(228.0/255.0), alpha: CGFloat(1.0)),
                      "cool":UIColor(red: CGFloat(207.0/255.0), green: CGFloat(241.0/255.0), blue: CGFloat(255.0/255.0), alpha: CGFloat(1.0)),
                      "passion":UIColor(red: CGFloat(255.0/255.0), green: CGFloat(245.0/255.0), blue: CGFloat(202.0/255.0), alpha: CGFloat(1.0))]
-        //idols = [["name":"小日向美穂", "type":"cute"],["name":"多田李衣菜", "type":"cool"],["name":"大槻唯", "type":"passion"]]
+    
         checkIsLikeListExist()
     }
     

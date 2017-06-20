@@ -141,7 +141,7 @@
             </objects>
             <point key="canvasLocation" x="-124" y="430"/>
         </scene>
-        <!--スコア-->
+        <!--Album-->
         <scene sceneID="899-6k-I4x">
             <objects>
                 <tableViewController id="X2h-N6-ihF" customClass="ScoreTableViewController" customModule="_0357035_final" customModuleProvider="target" sceneMemberID="viewController">
@@ -184,7 +184,7 @@
                             <outlet property="delegate" destination="X2h-N6-ihF" id="utF-3i-kYs"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="スコア" id="4D5-HY-x27">
+                    <navigationItem key="navigationItem" title="Album" id="4D5-HY-x27">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="bd1-WY-Qtj">
                             <connections>
                                 <segue destination="Eo2-T7-jz0" kind="show" identifier="addSegue" id="Z8F-ht-x1M"/>
@@ -310,11 +310,11 @@
             </objects>
             <point key="canvasLocation" x="704.79999999999995" y="1190.5547226386807"/>
         </scene>
-        <!--スコア-->
+        <!--Album-->
         <scene sceneID="hiu-5B-laI">
             <objects>
-                <navigationController id="gfJ-Td-5JA" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="スコア" id="iTZ-Vp-4FH"/>
+                <navigationController title="Album" id="gfJ-Td-5JA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Album" id="iTZ-Vp-4FH"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lqe-X5-rXP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

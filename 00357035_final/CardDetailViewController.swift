@@ -76,11 +76,7 @@ class CardDetailViewController: UIViewController {
         
         for dic in likeDic{
             if(dic[realName]?.decomposedStringWithCanonicalMapping == cardName + idolName){
-                let controller = UIAlertController(title: "", message: "このカードはすでに「お気に入り」リストに入りました", preferredStyle: UIAlertControllerStyle.alert)
-                let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) in})
-                controller.addAction(action)
-                present(controller, animated: true, completion: nil)
-            
+                displayAlretWindow(title: "", message: "このカードはすでに「お気に入り」リストに入りました")
                 return
             }
         }
@@ -94,13 +90,17 @@ class CardDetailViewController: UIViewController {
                 s += dic[type]! + "\n"
             }
             try s.write(to: url!, atomically: false, encoding: String.Encoding.utf8)
-            let controller = UIAlertController(title: "", message: "お気に入り登録成功", preferredStyle: UIAlertControllerStyle.alert)
-            let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) in})
-            controller.addAction(action)
-            present(controller, animated: true, completion: nil)
+                displayAlretWindow(title: "", message: "お気に入り登録成功")
         } catch {
             return
         }
     }
     
+    func displayAlretWindow(title: String,message: String){
+        let controller = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) in})
+        controller.addAction(action)
+        present(controller, animated: true, completion: nil)
+
+    }
 }

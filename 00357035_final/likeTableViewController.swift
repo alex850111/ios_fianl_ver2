@@ -88,7 +88,6 @@ class likeTableViewController: UITableViewController {
                     likeList.append([nickName:s[0],realName:s[1].decomposedStringWithCanonicalMapping,type:s[2]])
                 }
             }
-            //likeList = [[realName:"［エターナルブルーム］渋谷凛".decomposedStringWithCanonicalMapping,nickName:"凛3.0",type:"cool"]]
         }
         catch{
             let s = ""

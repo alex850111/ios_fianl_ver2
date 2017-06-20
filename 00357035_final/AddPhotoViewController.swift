@@ -48,27 +48,18 @@ class AddPhotoViewController: UITableViewController, UIImagePickerControllerDele
         var name = nameField.text!
         //if text field is empty
         if name.characters.count == 0{
-            let controller = UIAlertController(title: "", message: "please input title for this photo", preferredStyle: UIAlertControllerStyle.alert)
-            let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) in})
-            controller.addAction(action)
-            present(controller, animated: true, completion: nil)
+            displayAlertWindow(title: "", message: "please input title for this photo")
             return
         }
         //if no photo have been selected
         if isPhotoSelected == false{
-            let controller = UIAlertController(title: "", message: "please select a photo", preferredStyle: UIAlertControllerStyle.alert)
-            let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) in})
-            controller.addAction(action)
-            present(controller, animated: true, completion: nil)
+            displayAlertWindow(title: "", message: "please select a photo")
             return
         }
         //if this name has been used
         for line in photoList {
             if line == name {
-                let controller = UIAlertController(title: "", message: "this title had been used", preferredStyle: UIAlertControllerStyle.alert)
-                let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) in})
-                controller.addAction(action)
-                present(controller, animated: true, completion: nil)
+                displayAlertWindow(title: "", message: "this title had been used")
                 return
             }
         }
@@ -89,18 +80,21 @@ class AddPhotoViewController: UITableViewController, UIImagePickerControllerDele
                 s += line + "\n"
             }
             try s.write(to: url!, atomically: false, encoding: String.Encoding.utf8)
-            print("text over")
             url = docUrl?.appendingPathComponent(name + ".png")
             if let pngImageData = UIImagePNGRepresentation(selectedImage) {
                 try pngImageData.write(to: url!, options: .atomic)
-                print("image over")
             } else {
-                print("convert failed")
             }
         }catch{
-            print ("save failed")
         }
 
+    }
+    
+    func displayAlertWindow(title: String, message: String){
+        let controller = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) in})
+        controller.addAction(action)
+        present(controller, animated: true, completion: nil)
     }
     
 }
