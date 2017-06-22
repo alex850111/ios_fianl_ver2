@@ -94,8 +94,16 @@ class ScoreTableViewController: UITableViewController {
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
+            let s = photoList[indexPath.row]
             photoList.remove(at: indexPath.row)
             saveList()
+            do{
+                let docUrl = docUrls.first
+                let url = docUrl?.appendingPathComponent(s.decomposedStringWithCanonicalMapping + ".png")
+                try fileManager.removeItem(at: url!)
+            }catch{
+                print("remove failed")
+            }
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
         }    
