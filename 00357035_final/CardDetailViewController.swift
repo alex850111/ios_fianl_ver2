@@ -29,6 +29,7 @@ class CardDetailViewController: UIViewController {
         addFavorite.target = self
         addFavorite.action = #selector(modifyLikeList)
         
+        
         let parent = self.tabBarController as! cardTabBarController
         parent.navigationItem.rightBarButtonItem = addFavorite
         propertyMark.image = UIImage(named : "mark_" + parent.property)
@@ -46,21 +47,53 @@ class CardDetailViewController: UIViewController {
         }
         // Do any additional setup after loading the view.
     }
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        //setObjectPosition()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    func setObjectPosition(){
+        let screenSize = UIScreen.main.bounds
+        let screenWidth = screenSize.width
+        let screenHeight = screenSize.height
+        let navigationBarHeight = self.navigationController?.navigationBar.frame.size.height
+        let statusBarHeight = UIApplication.shared.statusBarFrame.height
+        var bottomHeight:CGFloat = 0
+        
+        if UIDevice().userInterfaceIdiom == .phone && UIScreen.main.nativeBounds.height == 2436{
+            bottomHeight = self.view.safeAreaInsets.bottom
+        } else {
+            bottomHeight = (self.tabBarController?.tabBar.frame.size.height) ?? 0
+        }
+        
+        textView.frame.origin.y = navigationBarHeight! + statusBarHeight
+        textView.frame.size.width = screenWidth
+        textView.frame.size.height = screenHeight
+        
+        propertyMark.frame.size.width = screenWidth - 30
+        propertyMark.frame.size.height = propertyMark.frame.size.width
+        propertyMark.frame.origin.x = 15
+        propertyMark.frame.origin.y = ((navigationBarHeight ?? 0) + statusBarHeight + screenHeight - bottomHeight - propertyMark.frame.size.height) * 0.5
+        
+        petitView.frame.origin.x = screenWidth - petitView.frame.size.width + 15
+        petitView.frame.origin.y = screenHeight - bottomHeight - petitView.frame.size.height - 15
+    }
     
     func modifyLikeList(){
         var likeDic = [[String:String]]()
         
+        //open file
         let fileManager = FileManager.default
         let docUrls = fileManager.urls(for: .documentDirectory, in: .userDomainMask)
         let docUrl = docUrls.first
         let url = docUrl?.appendingPathComponent("likeList.txt")
         
+        //read file into dic
         do{
             let content = try String(contentsOf: url!, encoding: String.Encoding.utf8)
             for line in content.components(separatedBy: "\n"){
@@ -74,14 +107,18 @@ class CardDetailViewController: UIViewController {
             return
         }
         
+        //check is this card had been added into dic
         for dic in likeDic{
+            //if true pop out message and end this func
             if(dic[realName]?.decomposedStringWithCanonicalMapping == cardName + idolName){
                 displayAlretWindow(title: "", message: "このカードはすでに「お気に入り」リストに入りました")
                 return
             }
         }
+        //else add this card into dic
         likeDic.append([realName:(cardName + idolName).decomposedStringWithCanonicalMapping,nickName:(cardName + idolName),type:property])
         
+        //write dic to file
         do{
             var s = ""
             for dic in likeDic{

@@ -26,7 +26,6 @@
 		8DC3EBC91ED52B130036DDD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3EBC81ED52B130036DDD2 /* ViewController.swift */; };
 		8DC3EBCC1ED52B130036DDD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DC3EBCA1ED52B130036DDD2 /* Main.storyboard */; };
 		8DC3EBCE1ED52B130036DDD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DC3EBCD1ED52B130036DDD2 /* Assets.xcassets */; };
-		8DC3EBD11ED52B130036DDD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DC3EBCF1ED52B130036DDD2 /* LaunchScreen.storyboard */; };
 		8DC3EBDB1ED533820036DDD2 /* likeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3EBDA1ED533820036DDD2 /* likeViewController.swift */; };
 		8DC3EBDF1ED54B870036DDD2 /* IdolTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DC3EBDE1ED54B870036DDD2 /* IdolTableCell.swift */; };
 /* End PBXBuildFile section */
@@ -51,11 +50,11 @@
 		8DC3EBC81ED52B130036DDD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8DC3EBCB1ED52B130036DDD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8DC3EBCD1ED52B130036DDD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8DC3EBD01ED52B130036DDD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8DC3EBD21ED52B130036DDD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8DC3EBD81ED52DFC0036DDD2 /* mainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mainViewController.swift; sourceTree = "<group>"; };
 		8DC3EBDA1ED533820036DDD2 /* likeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = likeViewController.swift; sourceTree = "<group>"; };
 		8DC3EBDE1ED54B870036DDD2 /* IdolTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdolTableCell.swift; sourceTree = "<group>"; };
+		CF2029E21FDA514C00C86E92 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ../../../.Trashes/502/LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +132,7 @@
 				4CCB81441EF524310027B1F6 /* 3 */,
 				8DC3EBCA1ED52B130036DDD2 /* Main.storyboard */,
 				8DC3EBCD1ED52B130036DDD2 /* Assets.xcassets */,
-				8DC3EBCF1ED52B130036DDD2 /* LaunchScreen.storyboard */,
+				CF2029E21FDA514C00C86E92 /* LaunchScreen.storyboard */,
 				8DC3EBD21ED52B130036DDD2 /* Info.plist */,
 			);
 			path = 00357035_final;
@@ -199,7 +198,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DC3EBD11ED52B130036DDD2 /* LaunchScreen.storyboard in Resources */,
 				8DC3EBCE1ED52B130036DDD2 /* Assets.xcassets in Resources */,
 				8DC3EBCC1ED52B130036DDD2 /* Main.storyboard in Resources */,
 			);
@@ -243,14 +241,6 @@
 				8DC3EBCB1ED52B130036DDD2 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		8DC3EBCF1ED52B130036DDD2 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8DC3EBD01ED52B130036DDD2 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -353,9 +343,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = WTW6QE6A72;
 				INFOPLIST_FILE = 00357035_final/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "NTOU.-0357035-final";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -368,9 +359,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = WTW6QE6A72;
 				INFOPLIST_FILE = 00357035_final/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "NTOU.-0357035-final";
 				PRODUCT_NAME = "$(TARGET_NAME)";
