@@ -20,32 +20,8 @@ class likeViewController: UIViewController {
         cardView.image = UIImage(named : (parent.realName + "+(立ち絵)").decomposedStringWithCanonicalMapping)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        //setObjectPosition()
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-    func setObjectPosition(){
-        let screenSize = UIScreen.main.bounds
-        let screenWidth = screenSize.width
-        let screenHeight = screenSize.height
-        var bottomHeight:CGFloat = 0
-        
-        if UIDevice().userInterfaceIdiom == .phone && UIScreen.main.nativeBounds.height == 2436{
-            bottomHeight = self.view.safeAreaInsets.bottom
-        } else {
-            bottomHeight = (self.tabBarController?.tabBar.frame.size.height) ?? 0
-        }
-        
-        cardView.frame.size.height = cardView.frame.size.height * screenWidth / cardView.frame.size.width
-        cardView.frame.size.width = screenWidth
-        
-        cardView.frame.origin.x = 0
-        cardView.frame.origin.y = screenHeight - bottomHeight - cardView.frame.size.height
-    }
-    
 }
 

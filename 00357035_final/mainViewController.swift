@@ -9,7 +9,14 @@ import UIKit
 
 class mainViewController: UITableViewController {
     var idols = [[String:String]]()
+    var displayList = [[String:String]]()
+    var isDisplay = [String:Bool]()
     var typeColor = [String:UIColor]()
+    @IBOutlet weak var switchPanel: UIView!
+    
+    @IBOutlet weak var cuteSwitch: UISwitch!
+    @IBOutlet weak var coolSwitch: UISwitch!
+    @IBOutlet weak var passionSwitch: UISwitch!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +27,7 @@ class mainViewController: UITableViewController {
                     var s = line.components(separatedBy: "\t")
                     s[0] = s[0].decomposedStringWithCanonicalMapping
                     idols.append(["name":s[0],"type":s[1]])
+                    displayList.append(["name":s[0],"type":s[1]])
                 }
             }
         }
@@ -27,7 +35,13 @@ class mainViewController: UITableViewController {
         typeColor = ["cute":UIColor(red: CGFloat(255.0/255.0), green: CGFloat(188.0/255.0), blue: CGFloat(228.0/255.0), alpha: CGFloat(1.0)),
                      "cool":UIColor(red: CGFloat(207.0/255.0), green: CGFloat(241.0/255.0), blue: CGFloat(255.0/255.0), alpha: CGFloat(1.0)),
                      "passion":UIColor(red: CGFloat(255.0/255.0), green: CGFloat(245.0/255.0), blue: CGFloat(202.0/255.0), alpha: CGFloat(1.0))]
-    
+        
+        isDisplay = ["cute" : true, "cool" : true, "passion" : true]
+        
+        cuteSwitch.addTarget(self, action: #selector(updateDisplaySelection), for: UIControlEvents.allEvents)
+        coolSwitch.addTarget(self, action: #selector(updateDisplaySelection), for: UIControlEvents.valueChanged)
+        passionSwitch.addTarget(self, action: #selector(updateDisplaySelection), for: UIControlEvents.valueChanged)
+        
         checkIsLikeListExist()
     }
     
@@ -41,7 +55,7 @@ class mainViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView,numberOfRowsInSection section: Int) ->Int {
-        return idols.count
+        return displayList.count
     
     }
     
@@ -50,7 +64,7 @@ class mainViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier:
             "idolCell", for: indexPath) as! IdolTableCell
         
-            let dic = idols[indexPath.row]
+            let dic = displayList[indexPath.row]
             cell.Name.text = dic["name"]
             cell.Icon.image = UIImage(named: (dic["name"]! + "_icon"))
             var colorName:String
@@ -64,7 +78,7 @@ class mainViewController: UITableViewController {
         Any?) {
         let indexPath = tableView.indexPathForSelectedRow
         let controller = segue.destination as! cardOfIdolTableViewController
-        let dic = idols[indexPath!.row]
+        let dic = displayList[indexPath!.row]
         controller.idolName = dic["name"]!
         controller.cellColor = typeColor[dic["type"]!]!
         controller.property = dic["type"]!
@@ -86,6 +100,23 @@ class mainViewController: UITableViewController {
             }catch{
             }
         }
+    }
+    
+    func updateDisplaySelection(){
+        isDisplay["cute"] = cuteSwitch.isOn
+        isDisplay["cool"] = coolSwitch.isOn
+        isDisplay["passion"] = passionSwitch.isOn
+        setDisplayList();
+    }
+    
+    func setDisplayList(){
+        displayList.removeAll()
+        for dic in idols{
+            if isDisplay[dic["type"]!]!{
+                displayList.append(dic)
+            }
+        }
+        self.tableView.reloadData()
     }
     
 }
